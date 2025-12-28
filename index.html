@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubham Rathod - Futuristic Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <!-- Particles Background -->
+    <div class="particles-container" id="particles"></div>
+
+    <!-- Navigation -->
+        <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">SHUBHAM.TECH</div>
+            <ul class="nav-links" id="navLinks"> 
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>SHUBHAM </h1>
+            <p class="tagline">Building the future with <span style="color: var(--primary-cyan);">code</span> & <span style="color: var(--primary-purple);">creativity</span></p>
+            <p class="description">
+                "I Am Full-stack Developer skilled in crafting dynamic web applications."
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="neon-btn secondary">
+                    <i class="fas fa-eye"></i> View Projects
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator" onclick="scrollToSection('about')">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="fade-in">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="profile-image">
+                <img src="./image.png" alt="Shubham">
+            </div>
+            <div class="bio">
+                <h3 style="color: var(--primary-cyan); margin-bottom: 1rem; font-size: 1.5rem;">Hello, I'm SHUBHAM!</h3>
+                <p>
+                  I am a passionate Full Stack Developer with strong knowledge of both frontend and backend technologies. I specialize in building responsive, scalable, and user-friendly web applications from end to end.
+                </p>
+            </div>
+        </div>
+        
+        <div class="tech-stack">
+            <div class="tech-item">
+                <i class="fab fa-html5"></i>
+                <p>HTML/CSS</p>
+            </div>
+            <div class="tech-item">
+                <i class="fa-brands fa-js"></i>
+                <p>JavaScript</p>
+            </div>
+            <div class="tech-item">
+                <i class="fab fa-java"></i>
+                <p>JAVA</p>
+            </div>
+            <div class="tech-item">
+                <i class="fab fa-react"></i>
+                <p>MySQL</p>
+            </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="fade-in">
+        <h2 class="section-title">Featured Projects</h2>
+        <p style="text-align: center; color: var(--text-dark); margin-bottom: 3rem;">
+            Explore some of my recent work showcasing modern web technologies and innovative solutions
+        </p>
+        
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=600" alt="E-Commerce Platform" class="project-image">
+                <div class="project-content">
+                    <h3 class="project-title">E-Commerce Platform</h3>
+                    <p class="project-description">
+                        Full-stack e-commerce solution with React, Node.js, and MongoDB. Features include user authentication, payment integration, and admin dashboard.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">Stripe</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        <a href="https://github.com/ShubhamRathod007/ShubhamRathod007"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+            <div class="project-card">
+                <img src="https://images.pexels.com/photos/6802042/pexels-photo-6802042.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Blockchain Tracker" class="project-image">
+                <div class="project-content">
+                    <h3 class="project-title">Blockchain Tracker</h3>
+                    <p class="project-description">
+                        Cryptocurrency portfolio tracker with real-time price updates, portfolio analytics, and transaction history management.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Web3.js</span>
+                        <span class="tech-tag">Chart.js</span>
+                        <span class="tech-tag">CoinGecko API</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        <a href="https://github.com/ShubhamRathod007/ShubhamRathod007"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="fade-in">
+        <h2 class="section-title">Skills & Expertise</h2>
+        
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3><i class="fas fa-code"></i> Frontend Development</h3>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>HTML</span>
+                        <span>95%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="95"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>CSS</span>
+                        <span>83%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="90"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>JavaScript</span>
+                        <span>88%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="88"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>React</span>
+                        <span>82%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="82"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3><i class="fas fa-server"></i> Backend Development</h3>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>JAVA</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="85"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Advanced Java</span>
+                        <span>74%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="80"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Express.js</span>
+                        <span>77%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="88"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>REST APIs</span>
+                        <span>76%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="90"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3><i class="fas fa-database"></i> Database & Tools</h3>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>MySQL</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="85"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>NoSQL</span>
+                        <span>78%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="78"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Git/GitHub</span>
+                        <span>92%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="92"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Docker</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="75"></div>
+                    </div>
+                </div>
+            </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="fade-in">
+        <h2 class="section-title">Get In Touch</h2>
+        
+        <div class="contact-content">
+            <div class="contact-form">
+                <h3 style="color: var(--primary-cyan); margin-bottom: 1.5rem;">Send Message</h3>
+                <form onsubmit="sendMessage(event)">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="neon-btn" style="width: 100%;">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+
+            <div class="contact-info">
+                <h3><i class="fas fa-rocket"></i> Let's Build Something Amazing!</h3>
+                <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 2rem;">
+                    I'm always excited to discuss new opportunities, innovative projects, 
+                    and creative collaborations. Whether you have a question, a project idea, 
+                    or just want to say hello, I'd love to hear from you!
+                </p>
+                
+                <div style="margin-bottom: 2rem;">
+                    <p style="color: var(--primary-cyan); margin-bottom: 0.5rem;">
+                        <i class="fas fa-envelope"></i> rathodsshubham33@email.com
+                    </p>
+                    <p style="color: var(--primary-cyan); margin-bottom: 0.5rem;">
+                        <i class="fas fa-phone"></i> +9373497660
+                    </p>
+                    <p style="color: var(--primary-cyan);">
+                        <i class="fas fa-map-marker-alt"></i> MAHARASHTRA, INDIA💕
+                    </p>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/shubham-rathod-b745812a2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-link" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.instagram.com/shubham___rathod113?igsh=MWl1cHNtNXM5cWZn" class="social-link" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                        <a href="https://wa.me/9373497660" class="social-link" title="WhatsApp">
+                     <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p class="footer-text">© 2025 SHUBHAM . All rights reserved.</p>
+            <p class="footer-love">Made with ❤️ by SHUBHAM</p>
+        </div>
+    </footer>
+
+    <script>
+       
+ 
+    </script>
+</body>
+</html>
